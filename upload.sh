@@ -1,0 +1,1 @@
+conan upload --all --remote bincrafters Boost.Msm/1.64.0@bincrafters/testing
