@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostMsmConan(ConanFile):
     name = "boost_msm"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-msm"
+    url = "https://github.com/bincrafters/conan-boost_msm"
 
     lib_short_names = ["msm"]
     is_header_only = True
