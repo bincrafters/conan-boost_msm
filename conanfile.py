@@ -8,7 +8,8 @@ class BoostMsmConan(ConanFile):
     name = "boost_msm"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_msm"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["msm"]
     is_header_only = True
 
@@ -16,24 +17,24 @@ class BoostMsmConan(ConanFile):
         self.info.header_only()
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_any/1.66.0@bincrafters/testing",
-        "boost_assert/1.66.0@bincrafters/testing",
-        "boost_bind/1.66.0@bincrafters/testing",
-        "boost_circular_buffer/1.66.0@bincrafters/testing",
-        "boost_config/1.66.0@bincrafters/testing",
-        "boost_core/1.66.0@bincrafters/testing",
-        "boost_function/1.66.0@bincrafters/testing",
-        "boost_fusion/1.66.0@bincrafters/testing",
-        "boost_mpl/1.66.0@bincrafters/testing",
-        "boost_parameter/1.66.0@bincrafters/testing",
-        "boost_phoenix/1.66.0@bincrafters/testing",
-        "boost_preprocessor/1.66.0@bincrafters/testing",
-        "boost_proto/1.66.0@bincrafters/testing",
-        "boost_serialization/1.66.0@bincrafters/testing",
-        "boost_tuple/1.66.0@bincrafters/testing",
-        "boost_type_traits/1.66.0@bincrafters/testing",
-        "boost_typeof/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.66.0@bincrafters/stable",
+        "boost_any/1.66.0@bincrafters/stable",
+        "boost_assert/1.66.0@bincrafters/stable",
+        "boost_bind/1.66.0@bincrafters/stable",
+        "boost_circular_buffer/1.66.0@bincrafters/stable",
+        "boost_config/1.66.0@bincrafters/stable",
+        "boost_core/1.66.0@bincrafters/stable",
+        "boost_function/1.66.0@bincrafters/stable",
+        "boost_fusion/1.66.0@bincrafters/stable",
+        "boost_mpl/1.66.0@bincrafters/stable",
+        "boost_parameter/1.66.0@bincrafters/stable",
+        "boost_phoenix/1.66.0@bincrafters/stable",
+        "boost_preprocessor/1.66.0@bincrafters/stable",
+        "boost_proto/1.66.0@bincrafters/stable",
+        "boost_serialization/1.66.0@bincrafters/stable",
+        "boost_tuple/1.66.0@bincrafters/stable",
+        "boost_type_traits/1.66.0@bincrafters/stable",
+        "boost_typeof/1.66.0@bincrafters/stable"
     )
 
     # BEGIN
@@ -41,7 +42,7 @@ class BoostMsmConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.66.0@bincrafters/stable"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
